@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     
-    int[,] ary = new int[9, 9] {{ 1,2,3,4,5,6,7,8,9 },
+    public int[,] ary = new int[9, 9] {{ 1,2,3,4,5,6,7,8,9 },
                                 { 4,5,6,7,8,9,1,2,3 },
                                 { 7,8,9,1,2,3,4,5,6 },
                                 { 2,3,4,5,6,7,8,9,1 },
@@ -21,7 +21,7 @@ public class LevelGenerator : MonoBehaviour
 
     void Start()
     {
-
+        ShowNumber.instance.ShowNum();
 
     }
 
